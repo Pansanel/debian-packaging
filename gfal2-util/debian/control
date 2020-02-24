@@ -1,0 +1,28 @@
+Source: gfal2-util
+Priority: optional
+Maintainer: Jerome Pansanel <jerome.pansanel@iphc.cnrs.fr>
+Build-Depends:
+    debhelper (>= 11.0.0),
+    dh-python,
+    python3,
+    gfal2-python3 (>= 1.9.0),
+    gfal2-plugin-file
+Standards-Version: 3.9.7
+Section: net
+Homepage: http://dmc.web.cern.ch/
+X-Python-Version: >= 3.0
+
+Package: gfal2-util
+Architecture: any
+Depends:
+    python3,
+    gfal2-python3 (>= 1.9.0),
+    ${misc:Depends},
+    ${python3:Depends}
+Recommends: gfal2-plugin-file, gfal2-plugin-lfc, gfal2-plugin-dcap, gfal2-plugin-srm, gfal2-plugin-gridftp, gfal2-plugin-http
+Description: GFAL2 utility tools
+ gfal2-util is a set of basic utility tools for file 
+ interactions and file copy based on the GFAL 2.0 toolkit.
+ gfal2-util supports the protocols of GFAL 2.0 : WebDav(s),
+ gridFTP, http(s), SRM, xrootd, etc...
+
